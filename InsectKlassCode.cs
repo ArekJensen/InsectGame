@@ -7,19 +7,19 @@ namespace InsectSimulation
     {
         // Attributes
         public int Size { get; set; }
-        public int Vitality { get; set; }
+        public int Hitpoints { get; set; }
         public int Senses { get; set; }
         public int Damage { get; set; }
         public int Resistance { get; set; }
         public int Mobility { get; set; }
 
         // Methods
-        public virtual int Selection() => 200;
-        public virtual int SelfReliance() => 500;
-        public virtual int SustenanceEyesight() => 250;
-        public virtual int SelfDamage() => 150;
-        public virtual int SelfResistance() => 50;
-        public virtual int SelfMobility() => 100;
+        public virtual int SetSize() => 200;
+        public virtual int SetHitpoint() => 500;
+        public virtual int SetSenses() => 250;
+        public virtual int SetDamage() => 150;
+        public virtual int SetResistance() => 50;
+        public virtual int SetMobility() => 100;
     }
 
     // Insect class inheriting from BaseForm
@@ -30,9 +30,9 @@ namespace InsectSimulation
         public bool Mandibles { get; set; }
 
         // Methods
-        public bool SelfReproduction() => true;
+        public bool SetExoskeleton() => true;
         public bool ExoskeletonFunctionality() => Exoskeleton;
-        public bool SendIndividues() => true;
+        public bool SetMandibles() => true;
     }
 
     // Lone Insect class inheriting from Insect
