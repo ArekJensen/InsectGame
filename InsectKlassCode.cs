@@ -13,7 +13,7 @@ namespace InsectSimulation
         public int Resistance { get; set; }
         public int Mobility { get; set; }
 
-        // Methods
+        // Methods (lite hjälp från google och chat)
         public virtual int SetSize() => 200;
         public virtual int SetHitpoint() => 500;
         public virtual int SetSenses() => 250;
@@ -85,7 +85,7 @@ namespace InsectSimulation
         }
     }
 
-    // Main program
+    // Main program (Med hjälp från chatGPT)
     class Program
     {
         static void Main(string[] args)
