@@ -71,7 +71,7 @@ namespace InsectSimulation
         public bool RoyalCry { get; set; }
 
         // Methods
-        public bool SelfReproductionFunction() => Reproduction;
+        public bool ReproductionFunction() => Reproduction;
 
         public void RoyalCryFunctionality()
         {
